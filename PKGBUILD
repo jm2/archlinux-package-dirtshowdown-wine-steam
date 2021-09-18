@@ -8,7 +8,9 @@ _steamid=201700
 arch=('i686' 'x86_64')
 makedepends=('steamcmd' 'icoutils')
 depends=('wine' 'winetricks')
-source=("${_pkgname}.sh" "${_pkgname}.desktop" "${_pkgname#dirt}.exe" "${_pkgname#dirt}_avx.exe"
+source=("${_pkgname}.sh" "${_pkgname}.desktop"
+        "https://github.com/jm2/archlinux-package-dirtshowdown-wine-steam/raw/master/${_pkgname#dirt}.exe"
+        "https://github.com/jm2/archlinux-package-dirtshowdown-wine-steam/raw/master/${_pkgname#dirt}_avx.exe"
         "Goldberg_Lan_Steam_Emu_master--a24a9c26.zip::https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/jobs/1590301114/artifacts/download")
 pkgdesc="DiRT Showdown using WINE with data via Steam"
 license=('custom')
